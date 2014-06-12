@@ -1,8 +1,8 @@
-# Chef-[S3FS](https://code.google.com/p/s3fs/)
+# [S3FS](https://code.google.com/p/s3fs/)
 
 ## Overview
 
-A Chef cookbook for S3Fs.
+A Chef cookbook for S3FS.
 
 FUSE-based file system backed by Amazon S3. Mount a bucket as a local file system read/write. Store files/folders natively and transparently.
 
