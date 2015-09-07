@@ -38,7 +38,7 @@ remote_file "#{Chef::Config[:file_cache_path]}/s3fs-#{node["s3fs"]["version"]}.t
 end
 
 # -rpath directive required else s3fs will utilize FuSE libraries in /lib.
-bash 'Install S3FS v' + node['s3fs']['version']} do
+bash "Install S3FS v#{node['s3fs']['version']}" do
   cwd Chef::Config[:file_cache_path]
   code <<-EOF
   export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
