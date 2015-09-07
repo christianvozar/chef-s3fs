@@ -36,7 +36,7 @@ Perform mounting or unmounting of an Amazon Web Services S3 bucket.
 Mount Amazon S3 bucket at specified mount point. Ideally, aws_access_key and aws_secret_key would come from an encrypted data bag.
 
     s3fs "S3-Bucket" do
-      mount "/buckets/amazon-s3-bucket"
+      mountpoint "/buckets/amazon-s3-bucket"
       aws_access_key "AKIAGHQTHAHTBARGQASA"
       aws_secret_key "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"
       action :mount
